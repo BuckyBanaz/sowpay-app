@@ -20,15 +20,21 @@ const CTASection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="accent" size="lg" className="bg-background text-foreground hover:bg-background/90">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  className="bg-background text-foreground hover:bg-background/90"
+                  onClick={() => window.open("https://play.google.com/store/search?q=com.sowpay.mart&c=apps&hl=en_IE", "_blank")}
+                >
                   <Smartphone className="w-5 h-5" />
                   Download App
                   <ArrowRight className="w-5 h-5" />
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
+                <Button
+                  variant="outline"
+                  size="lg"
                   className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
+                  onClick={() => window.open("https://www.sowpaymart.com/sign-in?auth=shopkepper", "_blank")}
                 >
                   <Store className="w-5 h-5" />
                   Register Your Shop

@@ -29,7 +29,11 @@ const HeroSection = () => {
                 Get Started Free
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button variant="outline" size="lg">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => window.open("https://www.sowpaymart.com/sign-in?auth=shopkepper", "_blank")}
+              >
                 Register Your Shop
               </Button>
             </div>

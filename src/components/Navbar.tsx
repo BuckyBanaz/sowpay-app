@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: "Home", href: "#home" },
     { name: "How It Works", href: "#how-it-works" },
     { name: "Features", href: "#features" },
-    { name: "SMP Points", href: "#smp-points" },
+    // { name: "SMP Points", href: "#smp-points" },
     { name: "About", href: "#about" },
     { name: "FAQ", href: "#faq" },
   ];
@@ -43,14 +43,22 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Link to="/login">
+            {/* <Link to="/login">
+              <Button variant="outline" size="sm">
+                Login
+              </Button>
+            </Link> */}
+            <Link to="https://www.sowpaymart.com/">
               <Button variant="outline" size="sm">
                 Login
               </Button>
             </Link>
+
+            <Link to="https://play.google.com/store/search?q=com.sowpay.mart&c=apps&hl=en_IE">
             <Button variant="hero" size="sm">
               Download App
             </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

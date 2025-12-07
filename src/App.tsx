@@ -9,12 +9,9 @@ import Register from "./pages/Register";
 import OTPVerification from "./pages/OTPVerification";
 import CustomerDashboard from "./pages/CustomerDashboard";
 import NotFound from "./pages/NotFound";
+import Cms from "./components/admin/CMSManagement";
 
-import AdminLoginPage from "./pages/admin/Login";
-import AdminDashboardPage from "./pages/admin/Dashboard";
-import AdminUsersListPage from "./pages/admin/UsersList";
-import AdminShopsListPage from "./pages/admin/ShopsList";
-import AdminRechargesListPage from "./pages/admin/RechargesList";
+
 
 const queryClient = new QueryClient();
 
@@ -30,11 +27,7 @@ const App = () => (
           <Route path="/register" element={<Register />} />
           <Route path="/otp-verification" element={<OTPVerification />} />
           <Route path="/dashboard" element={<CustomerDashboard />} />
-          <Route path="/admin/login" element={<AdminLoginPage />} />
-          <Route path="/admin/dashboard" element={<AdminDashboardPage />} />
-          <Route path="/admin/users" element={<AdminUsersListPage />} />
-          <Route path="/admin/shops" element={<AdminShopsListPage />} />
-          <Route path="/admin/recharges" element={<AdminRechargesListPage />} />
+          <Route path="/admin/cms" element={<Cms />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
